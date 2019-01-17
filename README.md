@@ -4,7 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-orange.svg)](https://opensource.org/licenses/MIT)
 ![Build: passing](https://img.shields.io/badge/build-passing-green.svg)
 
-![site-logo](https://github.com/pritam-patil/react-material-webpack-boiler/raw/master/src/static/images/favicon.ico "Logo Title")
+![site-logo](https://github.com/pritam-patil/react-material-webpack-boiler/raw/master/src/static/images/favicon-194x194.png "Logo Title")
 
 # React-Material-Webpack boilerplate
 
