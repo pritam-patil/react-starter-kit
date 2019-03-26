@@ -1,5 +1,5 @@
 import React from 'react';
-import { object } from 'prop-types';
+import { object, string } from 'prop-types';
 import { AppBar, IconButton, Toolbar, Typography } from '@material-ui/core';
 import { Menu as MenuIcon, MoreVert as OptionsIcon } from '@material-ui/icons';
 import { withStyles } from '@material-ui/core/styles';
@@ -25,7 +25,7 @@ const styles = {
 };
 
 function ButtonAppBar(props) {
-  const { classes } = props;
+  const { classes, color } = props;
   return (
     <div className={classes.root}>
       <AppBar position="static" className={classes.appBar}>
@@ -33,7 +33,7 @@ function ButtonAppBar(props) {
           <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
             <MenuIcon />
           </IconButton>
-          <Typography variant="title" color="inherit" className={classes.grow}>
+          <Typography variant="title" color={color} style={{ color }} className={classes.grow}>
             {APP_NAME}
           </Typography>
           <IconButton className={classes.moreButton} color="inherit" aria-label="More">
@@ -47,6 +47,11 @@ function ButtonAppBar(props) {
 
 ButtonAppBar.propTypes = {
   classes: object.isRequired,
+  color: string,
+};
+
+ButtonAppBar.defaultProps = {
+  color: 'inherit',
 };
 
 export default withStyles(styles)(ButtonAppBar);
