@@ -16,7 +16,9 @@ The project serves as a **starter kit** for any ReactJS project. You can use thi
 * Comes with basic layout with Material UI
 * Styling support with **SCSS**
 * Basic server setup with *express*
-* Storybook is provided for standalone development of components
+* Storybook is configured so that you could write independant stories per component
+* Support for error reporting using AirBrake
+* Built-in support for TravisCI
 * Contains handling of 404 error (page not found) paths
 * Handles **JS disabled on browser** scenario**
 * Prettier and ESLint configured with *EditorConfig* support
@@ -48,8 +50,8 @@ You will need to have following installed to use the software -
 To get a copy of this project and start developing,
 
 ```bash
-git clone git@github.com:antonfisher/react-express-webpack.git
-cd react-express-webpack
+git clone https://github.com/pritam-patil/react-material-webpack-boiler.git
+cd react-material-webpack-boiler
 npm install
 ```
 
